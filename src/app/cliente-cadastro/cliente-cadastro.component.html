@@ -1,0 +1,23 @@
+<form>
+  <div class="form-group col-sm-4" >
+    <label>Id</label>
+    <input type="number" [(ngModel)]="cliente.id" class="form-control" name="nome" />
+  </div>
+
+  <div class="form-group col-sm-4" >
+    <label>Nome</label>
+    <input type="text" [(ngModel)]="cliente.nome" class="form-control" name="nome" />
+  </div>
+ 
+  <div class="form-group col-sm-4">
+    <label>Endereço</label>
+    <input type="text"  [(ngModel)]="cliente.endereco" class="form-control" name="endereco" />
+  </div>
+
+  <div class="form-group col-sm-4">
+    <label>E-mail</label>
+    <input type="text" [(ngModel)]="cliente.email" class="form-control" name="email" />
+  </div>
+ 
+  <button type="submit" (click)="gravar()" class="btn btn-primary col-sm-4">Salvar</button>
+</form>
