@@ -23,4 +23,11 @@ export class ClienteComponent implements OnInit {
       this.clientes = res;
     });
   }
+
+  remover(id){
+    console.log('id selecionado' + id)
+    this.service.remove(id).subscribe(()=> {
+      this.listar();
+    });
+  }
 }
